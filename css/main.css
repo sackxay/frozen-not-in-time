@@ -1,0 +1,18 @@
+html {
+  background-color: #fff;
+}
+
+.text {
+  height: px;
+  margin: 200px auto;
+  position: relative;
+  width: 66.6%;
+}
+
+.ice-cream {
+  width: 33.3%;
+}
+
+section {
+  display: flex;
+}
