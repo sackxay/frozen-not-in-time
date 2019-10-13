@@ -1,5 +1,6 @@
 html {
   background-color: #fff;
+  font-family: 'Fredoka One', sans-serif;
 }
 
 .text {
@@ -7,6 +8,9 @@ html {
   margin: 200px auto;
   position: relative;
   width: 66.6%;
+
+  animation: all 0s 2s linear;
+
 }
 
 .ice-cream {
@@ -68,6 +72,18 @@ section {
 
   100% {
     transform: translateY(4em);
+  }
+
+}
+
+@keyframes text-appear {
+
+  0% {
+    opacity(0%);
+  }
+
+  100% {
+    opacity(100%);
   }
 
 }
