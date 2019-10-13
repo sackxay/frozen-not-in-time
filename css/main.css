@@ -16,3 +16,58 @@ html {
 section {
   display: flex;
 }
+
+.btn {
+  background-color: purple;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+.topping {
+  bottom: calc(25% - 8px);
+  left: calc(75% - 7px);
+  position: absolute;
+
+  transform-origin: 50% calc(100% - 8px);
+}
+
+.cherry {
+  bottom: calc(80% - 8px);
+  animation: topping-rotate 3s linear forwards;
+}
+
+.vanilla-fudge {
+  bottom: calc(65% - 8px);
+  animation: topping-rotate 2s linear forwards;
+}
+
+.chocolate-chip {
+  bottom: calc(55% - 8px);
+  left: calc(76% - 7px);
+  animation: topping-rotate 1.5s linear forwards;
+}
+
+.mint-chip {
+  bottom: calc(45% - 8px);
+  animation: topping-rotate 1s linear forwards;
+}
+
+.cone {
+  animation: topping-rotate .5s linear forwards;
+}
+
+
+
+@keyframes topping-rotate {
+
+  0% {
+    transform: translateY(-50em);
+  }
+
+  100% {
+    transform: translateY(4em);
+  }
+
+}
