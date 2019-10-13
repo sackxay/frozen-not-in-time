@@ -1,65 +1,93 @@
 html {
-  background-color: #fff;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: "Fredoka One", sans-serif;
+  border-top: 5px solid #b3fbff;
+  background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 20px, #d4fdff 20px, #d4fdff 25px);
+}
+
+body {
+  margin: 0;
 }
 
 .text {
-  height: px;
-  margin: 200px auto;
-  position: relative;
-  width: 66.6%;
+width: 66.6%;
+}
 
-  animation: all 0s 2s linear;
+.title {
+  bottom: calc(60% - 8px);
+  transform: rotate(-13deg);
+  transform-origin: center left;
+}
 
+.paragraph {
+  bottom: calc(50% - 8px);
+
+  transform: rotate(-7deg);
+  max-width: 19em;
+  transform-origin: left center;
 }
 
 .ice-cream {
+  position: relative;
   width: 33.3%;
 }
 
 section {
   display: flex;
+  border-bottom: 5px solid #b3fbff;
 }
 
 .btn {
   background-color: purple;
+  bottom: calc(60% - 8px);
+
 }
 
 .btn:hover {
   background-color: blue;
+  filter: blur(1px);
+
 }
 
 .topping {
+  height: 60%;
+
   bottom: calc(25% - 8px);
-  left: calc(75% - 7px);
+  left: calc(5% - 7px);
   position: absolute;
 
   transform-origin: 50% calc(100% - 8px);
 }
 
 .cherry {
-  bottom: calc(80% - 8px);
+  bottom: calc(100% - 8px);
   animation: topping-rotate 3s linear forwards;
+  position: absolute;
 }
 
 .vanilla-fudge {
-  bottom: calc(65% - 8px);
+  bottom: calc(100% - 8px);
   animation: topping-rotate 2s linear forwards;
+  position: absolute;
+
 }
 
 .chocolate-chip {
-  bottom: calc(55% - 8px);
-  left: calc(76% - 7px);
+  bottom: calc(80% - 8px);
+  left: calc(8% - 7px);
   animation: topping-rotate 1.5s linear forwards;
+  position: absolute;
+
 }
 
 .mint-chip {
-  bottom: calc(45% - 8px);
+  bottom: calc(60% - 8px);
   animation: topping-rotate 1s linear forwards;
+  position: absolute;
 }
 
 .cone {
   animation: topping-rotate .5s linear forwards;
+  position: absolute;
 }
 
 
