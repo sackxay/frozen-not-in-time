@@ -33,7 +33,7 @@ html {
   width: 33.3%;
   height: 85%;
   bottom: calc(-25% - 8px);
-  left: calc(10% - 7px);
+  left: calc(5% - 7px);
 }
 
 section {
@@ -62,53 +62,114 @@ section {
 }
 
 .cherry {
-  bottom: calc(120% - 8px);
-  animation: topping-fall 3s linear forwards;
+  z-index: 4;
+  top: -15em;
+  left: 3.5em;
+  animation: fall-cherry .25s 2s linear forwards;
   position: absolute;
 }
 
 .vanilla-fudge {
-  bottom: calc(90% - 8px);
-  animation: topping-fall 2s linear forwards;
+  z-index: 3;
+  top: -20.3em;
+  left: 3.33em;
+  animation: fall-fudge .25s 1.25s linear forwards;
   position: absolute;
 }
 
 .chocolate-chip {
-  bottom: calc(65% - 8px);
-  left: calc(8% - 7px);
-  animation: topping-fall 1.5s linear forwards;
+  z-index: 2;
+  top: -30.75em;
+  left: 3.75em;
+  animation: fall-chip .25s 1s linear forwards;
   position: absolute;
 }
 
 .mint-chip {
+  z-index: 1;
   bottom: calc(40% - 8px);
-  animation: topping-fall 1s linear forwards;
+  top: -42em;
+  left: 3.5em;
+  animation: fall-mint .25s .75s linear forwards;
   position: absolute;
 }
 
 .cone {
-  bottom: calc(0% - 8px);
-  animation: topping-fall .5s linear forwards;
+  z-index: 4;
+  top: -50em;
+  left: 3.5em;
+  animation: fall-cone .25s .5s linear forwards;
   position: absolute;
 }
 
 @media only screen and (min-width: 90em) {
 
-  h1 {
-    top: 1.4em;
-    left: 1.27em;
+  section {
+    margin: 0em 15em 10em;
+  }
+
+  .ice-cream {
+    height: 80%;
   }
 
 }
 
-@keyframes topping-fall {
+@keyframes fall-cherry {
 
-  0% {
-    transform: translateY(-50em);
+  from {
+    top: -20em;
   }
 
-  100% {
-    transform: translateY(4em);
+  to {
+    top: -9.5em;
+  }
+
+}
+
+@keyframes fall-fudge {
+
+  from {
+    top: -30.3em;
+  }
+
+  to {
+    top: -5.05em;
+  }
+
+}
+
+@keyframes fall-chip {
+
+  from {
+    top: -25.75em;
+  }
+
+  to {
+    top: -1.5em;
+  }
+
+}
+
+@keyframes fall-mint {
+
+  from {
+    top: -25em;
+  }
+
+  to {
+    top: 3em;
+  }
+
+}
+
+@keyframes fall-cone {
+
+  from {
+    top: -15em;
+  }
+
+  to {
+    top: 8.5em;
   }
 
 }
