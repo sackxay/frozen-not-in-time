@@ -174,7 +174,7 @@ section {
 @keyframes text-appear {
 
   0% {
-    filter: opacity(0) blur(5px);
+    filter: opacity(0);
   }
 
   100% {
