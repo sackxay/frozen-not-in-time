@@ -11,7 +11,8 @@ body {
 .text {
   filter: opacity(0);
   width: 66.6%;
-  animation: text-appear 1s 2s linear forwards;
+  animation: text-appear 1s 2s ease forwards;
+  text-shadow: 2px 2px rgba(0, 0, 0, .5);
 }
 
 .title {
@@ -19,8 +20,6 @@ body {
   transform: rotate(-10deg);
   transform-origin: left center;
   color: #990073;
-  text-shadow: 2px 2px #e1e1e1;
-
 }
 
 .paragraph {
@@ -29,17 +28,14 @@ body {
   transform: rotate(-5deg);
   max-width: 19em;
   transform-origin: left center;
-  text-shadow: 2px 2px #e1e1e1;
 }
 
 .ice-cream {
   position: relative;
   width: 33.3%;
-  height: 70%;
+  height: 75%;
   bottom: calc(-15% - 8px);
-  left: calc(20% - 7px);
-
-
+  left: calc(60% - 7px);
 }
 
 section {
@@ -48,14 +44,11 @@ section {
 }
 
 .btn {
-
   bottom: calc(70% - 8px);
-
 }
 
 .btn:hover {
   background-color: #010101;
-
 }
 
 .topping {
@@ -73,7 +66,6 @@ section {
   bottom: calc(90% - 8px);
   animation: topping-fall 2s linear forwards;
   position: absolute;
-
 }
 
 .chocolate-chip {
@@ -81,7 +73,6 @@ section {
   left: calc(8% - 7px);
   animation: topping-fall 1.5s linear forwards;
   position: absolute;
-
 }
 
 .mint-chip {
@@ -92,7 +83,6 @@ section {
 
 .cone {
   bottom: calc(0% - 8px);
-
   animation: topping-fall .5s linear forwards;
   position: absolute;
 }
@@ -117,7 +107,7 @@ section {
     filter: opacity(0) blur(5px);
   }
 
-  50% {
+  100% {
     filter: blur(10px);
   }
   100% {
