@@ -1,7 +1,7 @@
 html {
   font-family: "Fredoka One", sans-serif;
   border-top: 5px solid #b3fbff;
-  background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 20px, #d4fdff 20px, #d4fdff 25px);
+  background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 20px, #d4fdff 5px, #d4fdff 40px);
 }
 
 body {
@@ -9,26 +9,36 @@ body {
 }
 
 .text {
-width: 66.6%;
+  width: 66.6%;
+  animation: wiggle 1s 2s linear;
 }
 
 .title {
   bottom: calc(60% - 8px);
-  transform: rotate(-13deg);
-  transform-origin: center left;
+  transform: rotate(-10deg);
+  transform-origin: left center;
+  color: #990073;
+  text-shadow: 2px 2px #e1e1e1;
+
 }
 
 .paragraph {
   bottom: calc(50% - 8px);
-
-  transform: rotate(-7deg);
+  color: #c09;
+  transform: rotate(-5deg);
   max-width: 19em;
   transform-origin: left center;
+  text-shadow: 2px 2px #e1e1e1;
 }
 
 .ice-cream {
   position: relative;
   width: 33.3%;
+  height: 70%;
+  bottom: calc(-15% - 8px);
+  left: calc(20% - 7px);
+
+
 }
 
 section {
@@ -37,42 +47,36 @@ section {
 }
 
 .btn {
-  background-color: purple;
-  bottom: calc(60% - 8px);
+
+  bottom: calc(70% - 8px);
 
 }
 
 .btn:hover {
-  background-color: blue;
-  filter: blur(1px);
+  background-color: #010101;
 
 }
 
 .topping {
-  height: 60%;
-
-  bottom: calc(25% - 8px);
-  left: calc(5% - 7px);
+  height: 70%;
   position: absolute;
-
-  transform-origin: 50% calc(100% - 8px);
 }
 
 .cherry {
-  bottom: calc(100% - 8px);
+  bottom: calc(120% - 8px);
   animation: topping-rotate 3s linear forwards;
   position: absolute;
 }
 
 .vanilla-fudge {
-  bottom: calc(100% - 8px);
+  bottom: calc(90% - 8px);
   animation: topping-rotate 2s linear forwards;
   position: absolute;
 
 }
 
 .chocolate-chip {
-  bottom: calc(80% - 8px);
+  bottom: calc(65% - 8px);
   left: calc(8% - 7px);
   animation: topping-rotate 1.5s linear forwards;
   position: absolute;
@@ -80,12 +84,14 @@ section {
 }
 
 .mint-chip {
-  bottom: calc(60% - 8px);
+  bottom: calc(40% - 8px);
   animation: topping-rotate 1s linear forwards;
   position: absolute;
 }
 
 .cone {
+  bottom: calc(0% - 8px);
+
   animation: topping-rotate .5s linear forwards;
   position: absolute;
 }
@@ -100,18 +106,6 @@ section {
 
   100% {
     transform: translateY(4em);
-  }
-
-}
-
-@keyframes text-appear {
-
-  0% {
-    opacity(0%);
-  }
-
-  100% {
-    opacity(100%);
   }
 
 }
