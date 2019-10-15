@@ -9,8 +9,9 @@ body {
 }
 
 .text {
+  filter: opacity(0);
   width: 66.6%;
-  animation: wiggle 1s 2s linear;
+  animation: text-appear 1s 2s linear forwards;
 }
 
 .title {
@@ -64,13 +65,13 @@ section {
 
 .cherry {
   bottom: calc(120% - 8px);
-  animation: topping-rotate 3s linear forwards;
+  animation: topping-fall 3s linear forwards;
   position: absolute;
 }
 
 .vanilla-fudge {
   bottom: calc(90% - 8px);
-  animation: topping-rotate 2s linear forwards;
+  animation: topping-fall 2s linear forwards;
   position: absolute;
 
 }
@@ -78,27 +79,27 @@ section {
 .chocolate-chip {
   bottom: calc(65% - 8px);
   left: calc(8% - 7px);
-  animation: topping-rotate 1.5s linear forwards;
+  animation: topping-fall 1.5s linear forwards;
   position: absolute;
 
 }
 
 .mint-chip {
   bottom: calc(40% - 8px);
-  animation: topping-rotate 1s linear forwards;
+  animation: topping-fall 1s linear forwards;
   position: absolute;
 }
 
 .cone {
   bottom: calc(0% - 8px);
 
-  animation: topping-rotate .5s linear forwards;
+  animation: topping-fall .5s linear forwards;
   position: absolute;
 }
 
 
 
-@keyframes topping-rotate {
+@keyframes topping-fall {
 
   0% {
     transform: translateY(-50em);
@@ -106,6 +107,21 @@ section {
 
   100% {
     transform: translateY(4em);
+  }
+
+}
+
+@keyframes text-appear {
+
+  0% {
+    filter: opacity(0) blur(5px);
+  }
+
+  50% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: opacity(100) blur(0);
   }
 
 }
