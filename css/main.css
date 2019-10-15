@@ -31,9 +31,9 @@ html {
 .ice-cream {
   position: relative;
   width: 33.3%;
-  height: 65%;
+  height: 70%;
   bottom: calc(-17% - 8px);
-  left: calc(4% - 7px);
+  left: calc(-7% - 7px);
 }
 
 section {
