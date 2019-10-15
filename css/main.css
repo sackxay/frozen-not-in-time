@@ -42,7 +42,7 @@ section {
 }
 
 .btn {
-  bottom: calc(70% - 8px);
+  bottom: calc(50% - 8px);
 }
 
 .btn:hover {
