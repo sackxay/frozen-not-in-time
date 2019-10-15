@@ -2,7 +2,29 @@ html {
   font-family: "Fredoka One", sans-serif;
   border-top: 5px solid #b3fbff;
   border-bottom: 5px solid #b3fbff;
-  background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 10px, #d4fdff 5px, #d4fdff 20px);
+}
+
+section {
+  display: flex;
+  height: 500px;
+    background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 10px, #d4fdff 5px, #d4fdff 20px);
+}
+
+.btn {
+  bottom: calc(50% - 8px);
+  border: 3px solid #990073;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.btn-ghost {
+  color: #990073;
+}
+
+.btn-ghost:hover {
+  color: #fff;
 }
 
 .text {
@@ -30,37 +52,14 @@ html {
 
 .ice-cream {
   position: relative;
-  width: 33.3%;
-  height: 70%;
+  min-height: 480px;
   bottom: calc(-17% - 8px);
   left: calc(-7% - 7px);
 }
 
-section {
-  display: flex;
-  height: 500px;
-}
-
-.btn {
-  bottom: calc(50% - 8px);
-  border: 3px solid #990073;
-}
-
-.btn:hover {
-  background-color: rgba(0, 0, 0, .5);
-}
-
-.btn-ghost {
-  color: #990073;
-}
-
-.btn-ghost:hover {
-  color: #fff;
-}
-
 .topping {
-  height: 70%;
   position: absolute;
+  height: 40%;
 }
 
 .cherry {
@@ -102,14 +101,6 @@ section {
   left: 3.5em;
   animation: fall-cone .25s .5s linear forwards;
   position: absolute;
-}
-
-@media only screen and (min-width: 90em) {
-
-  section {
-    margin-left: 170px;
-  }
-
 }
 
 @keyframes fall-cherry {
