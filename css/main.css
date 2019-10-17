@@ -28,7 +28,7 @@ section {
 }
 
 .text {
-  filter: opacity(0);
+  filter: opacity(100);
   height: 120%;
   width: 66.6%;
   animation: text-appear 1s 2s ease forwards;
@@ -36,7 +36,7 @@ section {
 }
 
 .title {
-  bottom: calc(60% - 8px);
+  bottom: calc(65% - 8px);
   transform: rotate(-9deg);
   transform-origin: left center;
   color: #990073;
@@ -45,7 +45,7 @@ section {
 .paragraph {
   bottom: calc(50% - 8px);
   color: #c09;
-  transform: rotate(-4deg);
+  transform: rotate(-5deg);
   max-width: 19em;
   transform-origin: left center;
 }
@@ -66,7 +66,7 @@ section {
   z-index: 4;
   top: -25em;
   left: 3.5em;
-  animation: fall-cherry .25s 2s linear forwards;
+  animation: fall-cherry .25s 2.5.6s linear forwards;
   position: absolute;
 }
 
@@ -103,10 +103,26 @@ section {
   position: absolute;
 }
 
+@media only screen and (min-width: 90em) {
+
+  html {
+    margin: 0;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .text {
+    min-height: 480px;
+  }
+
+}
+
 @keyframes fall-cherry {
 
   from {
-    top: -20em;
+    top: -25em;
   }
 
   to {
